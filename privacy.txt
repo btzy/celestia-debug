@@ -1,0 +1,47 @@
+This Privacy Policy governs the manner in which we collect, use, maintain, communicate and disclose information collected from users ("Users") of the celestia.io website ("Site").  This privacy policy applies to the Site and all products and services offered by us.
+
+Your data
+
+Our servers collect information about every User connecting to our Site.  These include your IP address, browser and computer details, internet service provider details, in-game name, movement and actions you make in the game, and any settings you choose for playing the game.
+
+Users may voluntarily submit personally-identifiable information to us via means such as creating an account or logging in to our Site.  While creating an account is not necessary to play the game, it may prevent them from engaging in certain Site related activities.
+
+Users also submit data to Google via the ways listed below, and we will be able to access those data if Google makes them available to us via Google Analytics, Google Adsense, and other Google services.
+
+Cookies and site data
+
+Our Site may use cookies and site data (HTML5 Local Storage) to enhance User experience.  Your web browser stores cookies and site data in your computer for saving user preferences, identification and tracking information about them.  You may choose to set your web browser to refuse cookies and site data, or to alert you when cookies are being sent.  However, it may prevent you from engaging in certain Site related activities.
+
+Usage of your data
+
+We may use your information to enhance your experience in using our Site.  With the exception of your username and password, we may analyse and share aggregated information on the Site and elsewhere.  You are advised not to transmit personally-identifiable or confidential information to our Site.
+
+We will protect your username and password by using reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.
+
+Advertising
+
+Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies and other site data. This privacy policy does not cover the use of cookies by any advertisers.
+
+Google Adsense
+
+Our Site may use Google Adsense.  Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.  Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.  Users may opt out of personalized advertising by visiting https://www.google.com/settings/ads.
+
+Google Analytics
+
+Our Site may use Google Analytics.  Google Analytics is a web analysis service provided by Google.  Google utilizes the data collected to track and examine the use of our Site, to prepare reports on its activities and share them with other Google services.  Google may store cookies and other data on your computer.  Google may use the data collected to contextualize and personalize the ads of its own advertising network.  Google's privacy policy may be found at https://www.google.com/intl/en/policies/privacy/.
+
+Our Site may use Google Analytics Advertising features.  These features may include remarketing with Google Analytics, Google Display Network Impression Reporting, Google Analytics Demographics and Interest Reporting, and integrated services that require Google Analytics to collect data for advertising purposes, including the collection of data via advertising cookies and identifiers.  Google may provide a way to opt out of these features at https://tools.google.com/dlpage/gaoptout/.
+
+Age Restrictions
+
+Our Site is not targeted at users under the age of 13.  As other Users of this Site may choose their own in-game names, you may inevitably see in-game names that you may find offensive.
+
+Changes to this privacy policy
+
+We have the discretion to update this privacy policy at any time.  Users are encouraged to check http://celestia.io/privacy.txt for updates to this privacy policy.  Your continued use of our Site after any such changes are made will be considered acceptance of the changes.
+
+Your acceptance of these terms
+
+By using this Site, you signify your acceptance of this policy. If you do not agree to this policy, please do not use our Site.  Your continued use of our Site after any changes are made to this policy will be considered acceptance of the changes.
+
+This document was last updated on 23 March 2017

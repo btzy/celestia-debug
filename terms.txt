@@ -1,0 +1,31 @@
+1. These Terms of Service governs the manner in which Users may use the celestia.io website ("Site").  This privacy policy applies to the Site and all products and services offered by us.
+
+2. THE SITE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SITE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SITE.
+
+3. The Site is not targeted to users under 13 years of age.  Any person allowing users under 13 years old to access the Site, with their computer, internet enabled device, internet connection and/or facilities (whether owned, leased or borrowed) that shall assume full liability and responsibility for any consequences and that UNDER NO CIRCUMSTANCES, TO THE EXTENT PERMITTED BY LAW, WILL NEITHER THE AUTHOR OF THE SITE, ANY THIRD PARTY CONTENT PROVIDER NOR THEIR RESPECTIVE AGENTS SHALL BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE USE OF OR INABILITY TO USE THE SITE BY USERS UNDER 13 YEARS OF AGE, EVEN IF SUCH PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+4. Game Rules:
+
+All users are to comply with these game rules when using our Site.
+(a) You are to respect other users of this Site.
+(b) You may not submit any in-game name or other content that may be offensive to others, or encourages or advocates illegal activity.
+(c) By submitting your in-game name or any other content to us, you agree to grant the Site and its authors the rights to use, store, copy, analyse, distribute and share such content with other users of the Site and to third parties.  You may not submit any content that you are not authorized to use, or are unable to grant the Site and its authors the abovementioned rights.
+(d) You may not transmit any data that contain a computer virus or content that may harm our Site.
+(e) You may not modify our game client or use any third party modifications to our game client that may confer you an unfair advantage when playing our game.
+(f) You may not use any automated means of connecting to our game servers.  These include computer-controlled players, bots, or any script that can initiate a connection to our game servers.
+
+5. As other Users of this Site may choose their own in-game names, you may inevitably see in-game names that you may find offensive.  By using this Site, you agree that you may inevitably see offensive in-game names set by other users.  While we may make reasonable attempts to sanitize in-game names and other content submitted by other users from malicious scripts or computer viruses, we make no warranty that the in-game names and other content downloaded by our game client is free from malicious scripts or computer viruses.
+
+6. We may ban any user from the Site for any reason, or for no reason at all.  We may also delete any user accounts from the Site for any reason, or for no reason at all.
+
+7. We do not make any warranty of the availability or performance of this Site.  We may also permanently remove this Site for any reason, or for no reason at all.  We do not make any warranty that the Site is free from computer viruses.
+
+8. These Terms of Service applies to all users of the Site, including those who may have purchased any in-game items or created an account on this Site.
+
+9. We have the discretion to update these Terms of Service at any time.  Users are encouraged to check http://celestia.io/terms.txt for updates to these Terms of Service.  Your continued use of our Site after any such changes are made will be considered acceptance of the changes.
+
+5. Governing Law:
+
+These terms and conditions are governed by and construed in accordance with the laws of Singapore and you irrevocably submit to the exclusive jurisdiction of the courts in that location.
+
+This document was last updated on 23 March 2017

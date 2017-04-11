@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+    <meta name="description" content="Eat stars to grow.  Fire at others for a spectacular explosion of stars.  But beware of others trying to do the same to you.">
+    <title>celestia.io</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b3b300">
+    <meta name="theme-color" content="#ffffff">
+    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script>
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+    </script>
+    <script>
+        googletag.cmd.push(function() {
+            googletag.defineSlot('/421469808/CLS_celestia.io_300x250', [300, 250], 'div-gpt-ad-1491910670069-0').addService(googletag.pubads());
+            googletag.pubads().enableSingleRequest();
+            googletag.enableServices();
+        });
+    </script>
+    <script type="text/javascript" src="celestia.min.js"></script>
+    <!--<script type="text/javascript" src="FontLoader.js"></script>
+    <script type="text/javascript" src="key-polyfill.js"></script>
+    <script type="text/javascript" src="encoding-polyfill.js"></script>
+    <script type="text/javascript" src="findindex-polyfill.js"></script>
+    <script type="text/javascript" src="find-polyfill.js"></script>
+    <script type="text/javascript" src="objects.js"></script>
+    <script type="text/javascript" src="interpolator.js"></script>
+    <script type="text/javascript" src="changelimited.js"></script>
+    <script type="text/javascript" src="notification.js"></script>
+    <script type="text/javascript" src="analytics.js"></script>
+    <script type="text/javascript" src="dom.js"></script>
+    <script type="text/javascript" src="main-icon-buttons.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+    <script type="text/javascript" src="facebook.js"></script>
+    <script type="text/javascript" src="twitter.js"></script>
+    <script type="text/javascript" src="vkontakte.js"></script>-->
+</head>
+<body>
+    <div id="fb-root"></div>
+    <div class="full-screen-panel displaynone transparent" id="leaderboard-panel">
+        <div class="inner-wrapper" id="leaderboard-panel-inner-wrapper">
+            <div id="leaderboard-panel-header">
+                <div class="header-item" id="leaderboard-panel-header-day"><span class="header-long">Past day</span><span class="header-short">Day</span></div>
+                <div class="header-item" id="leaderboard-panel-header-week"><span class="header-long">Past week</span><span class="header-short">Week</span></div>
+                <div class="header-item" id="leaderboard-panel-header-month"><span class="header-long">Past month</span><span class="header-short">Month</span></div>
+                <div class="header-item" id="leaderboard-panel-header-you"><span class="header-long">Your games</span><span class="header-short">You</span></div>
+            </div>
+            <div id="leaderboard-panel-content">
+                <div class="content-item displaynone" id="leaderboard-panel-content-day">
+                    <div class="refreshing-div">Refreshing &hellip;</div>
+                    <table class="content-table">
+                        <tbody class="content-tbody">
+                            <!--<tr>
+                                <td class="index">1</td>
+                                <td class="name">Name</td>
+                                <td class="score">1234352</td>
+                                <td class="timestamp">dfh</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-item displaynone" id="leaderboard-panel-content-week">
+                    <div class="refreshing-div">Refreshing &hellip;</div>
+                    <table class="content-table">
+                        <tbody class="content-tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-item displaynone" id="leaderboard-panel-content-month">
+                    <div class="refreshing-div">Refreshing &hellip;</div>
+                    <table class="content-table">
+                        <tbody class="content-tbody">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="content-item displaynone" id="leaderboard-panel-content-you">
+                    <div class="refreshing-div">Refreshing &hellip;</div>
+                    <table class="content-table">
+                        <tbody class="content-tbody">
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen-panel" id="welcome-panel">
+        <div id="new-changes-panel"><div id="new-changes-button">Newest changes &raquo;</div>
+            <div id="new-changes-details" class="displaynone">
+                <ul><li>Some improved animations</li></ul>
+                <div class="older-changes">Older changes</div>
+                <ul class="older-changes-details">
+                    <li>Global leaderboard with daily, weekly and monthly highscores.</li>
+                    <li>Personal leaderboard (saved locally).</li>
+                    <li>Bots have now realised that they can boost.</li>
+                    <li>Cranked up the movement speed.</li>
+                    <li>Reduced boost speed multiplier slightly.</li>
+                </ul>
+                <div class="older-changes-details">For more information, please view the <a href="changelog.html">changelog</a>.</div>
+            </div>
+        </div>
+        <div id="welcome-flex">
+            <div id="flex-item-links">
+                <a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a href="changelog.html">Changelog</a> | <a href="http://iogames.space/">More .io games</a>
+            </div>
+            <div class="flex-item-expand2"></div>
+            <div id="flex-item-title">
+                <div id="canvas-clipper">
+                    <canvas id="title-canvas"><img src="celestiaio.png" alt="celestia.io" /></canvas>
+                </div>
+            </div>
+            <div id="flex-item-name">
+                <div class="wrapper">
+                    <input type="text" id="name-textbox" placeholder="Enter your name" />
+                    <div id="name-second-row">
+                        <div class="name-second-row-item name-second-row-button" id="leaderboard-button"><canvas id="leaderboard-button-canvas">Leaderboard</canvas></div>
+                        <div class="name-second-row-item" id="center-space"></div>
+                        <div class="name-second-row-item name-second-row-button" id="join-button"><canvas id="join-button-canvas">Join</canvas></div>
+                    </div>
+                </div>
+            </div>
+            <div id="flex-item-note">&nbsp;<span>Left click to shoot</span><span>Right click or Spacebar to boost</span><span>Enter key to start</span>&nbsp;</div>
+            <div id="flex-item-connecting" class="displaynone">Connecting …</div>
+            <div id="flex-item-inputmode">
+                <div><span id="interactionmode"><span>Interaction mode:</span> <span class="interactionoption visible" id="mousedefault">Mouse + Keyboard</span><span class="interactionoption touch" id="touchdefault">Touch (fire on left)</span><span class="interactionoption touch opposite">Touch (fire on right)</span> <span style="color:gray;">(click to change)</span></span></div>
+            </div>
+            <div class="flex-item-expand"></div>
+            <div class="flex-item-ad" id="flex-item-ad">
+                <div id="ad-wrapper">
+                    <div id='div-gpt-ad-1491910670069-0' style='height:250px; width:300px;'></div>
+                </div>
+            </div>
+            <div class="flex-item-expand"></div>
+            <!--<div id="flex-item-sharedrawing">
+                <img src="share.png" />
+            </div>-->
+            <div id="flex-item-sharer">
+                <span class="inlineblock">
+                    <div class="fb-share-button" data-href="http://celestia.io/" data-layout="button" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fcelestia.io%2F&amp;src=sdkpreparse">Share</a></div>
+                </span>
+                <span class="inlineblock">
+                    <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=Come%20and%20play&hashtags=celestiaio">Tweet</a>
+                </span>
+                <span class="inlineblock">
+                    <div id="vk-share-button"></div>
+                    <!--<div class="vklink">
+                        <div class="vklinkinner">Share</div>
+                    </div>-->
+                </span>
+                <span class="inlineblock">
+                    <div class="redditlink">
+                        <a href="https://www.reddit.com/r/celestiaio/">r/celestia.io</a>
+                    </div>
+                </span>
+            </div>
+            <div id="flex-item-legal">
+                <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy</a>
+            </div>
+        </div>
+    </div>
+    <div class="full-screen-panel" id="game-panel">
+        <canvas id="main-canvas"></canvas>
+    </div>
+</body>
+</html>

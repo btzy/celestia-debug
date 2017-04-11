@@ -1,0 +1,132 @@
+@font-face{
+    font-family:"CandelaBold";
+    src:url("fonts/candela-bold.otf"),url("fonts/candela-bold.woff");
+}
+@font-face{
+    font-family:"CandelaBook";
+    src:url("fonts/candela-book.otf"),url("fonts/candela-book.woff");
+}
+@font-face{
+    font-family:"CandelaItalic";
+    src:url("fonts/candela-italic.otf"),url("fonts/candela-italic.woff");
+}
+html, body{
+    background-color:black;
+    color:white;
+    font-family:"CandelaBook",sans-serif;
+}
+
+#blog .title, #about .title, #changelog .title{
+    text-align:center;
+    padding:20px 0;
+    font-size:28px;
+    font-family:"CandelaBold",sans-serif;
+}
+
+#blog .game{
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+    padding:20px 0;
+    color:darkgray;
+}
+
+#blog .game a{
+    text-decoration:inherit;
+    color:inherit;
+}
+
+#blog .game a:hover{
+    text-decoration:underline;
+    color:white;
+}
+
+#blog .post{
+    width:100%;
+    max-width:800px;
+    margin:0 auto;
+    padding:20px 0;
+}
+
+#blog .post>div{
+    margin:4px 0;
+}
+
+#blog .post a{
+    text-decoration:inherit;
+    color:yellow;
+}
+
+#blog .post a:hover{
+    text-decoration:underline;
+}
+
+#blog .date{
+    font-family:"CandelaItalic",sans-serif;
+    color:lightgray;
+    font-size:14px;
+    padding-left:20px;
+}
+
+#about .body{
+    width:100%;
+    max-width:600px;
+    margin:0 auto;
+}
+
+#about h3{
+    font-family:"CandelaBold",sans-serif;
+}
+
+#about .nobullet{
+    list-style-type:none;
+}
+
+#about .controlhighlight{
+    color:rgb(255,170,128);
+}
+
+#about a{
+    color:yellow;
+    text-decoration:underline;
+}
+
+#changelog .maintable{
+    width:100%;
+    border-collapse:collapse;
+    table-layout:fixed;
+    border:3px solid grey;
+}
+
+#changelog .maintable .datecell{
+    width:150px;
+}
+
+#changelog .maintable th, #changelog .maintable td{
+    border:1px solid grey;
+    padding:4px 8px;
+    text-align:center;
+}
+
+#changelog .maintable .version td{
+    border-top:3px solid grey;
+}
+
+#changelog .maintable .details td{
+    border-bottom:3px solid grey;
+}
+
+#changelog .game{
+    text-align:center;
+    padding-bottom:20px;
+}
+
+#changelog .game a{
+    text-decoration:inherit;
+    color:darkgray;
+}
+
+#changelog .game a:hover{
+    text-decoration:underline;
+    color:white;
+}
