@@ -22,6 +22,7 @@ function initAipPreroll() {
             wrappingStyle.setProperty("bottom","0");
             wrappingStyle.setProperty("background-color","rgba(0,0,0,0.2)");
             wrappingStyle.setProperty("display","none");
+            wrappingStyle.setProperty("pointer-events","none");
             wrappingStyle.setProperty("justify-content","center");
             wrappingStyle.setProperty("align-items","center");
             videoElement=document.createElement("div");
@@ -59,12 +60,14 @@ function initAipPreroll() {
         });
         AdInPlay.showVideoAd=function(callback){
             complete_callback=function(){
+                wrappingElement.style.setProperty("pointer-events","none");
                 callback();
             };
             remove_callback=function(){
                 wrappingElement.style.setProperty("display","none");
             };
             wrappingElement.style.setProperty("display","flex");
+            wrappingElement.style.setProperty("pointer-events","auto");
             adplayer.startPreRoll();
         };
         
