@@ -285,13 +285,14 @@ body{
 
 #ia-please-top{
     flex:0 0 auto;
-    font-size:18px;
+    font-size:20px;
     color:rgb(200,200,200);
+    text-transform:uppercase;
 }
 
 #ia-please-bottom{
     flex:0 0 auto;
-    font-size:20px;
+    font-size:48px;
     color:yellow;
 }
 
