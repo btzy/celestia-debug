@@ -8,18 +8,33 @@ function initAipPreroll() {
     if(typeof aipPlayer !== "undefined") {
         var complete_callback=undefined;
         var remove_callback=undefined;
-        var videoElement=document.getElementById("adinplay-preroll");
-        if(!videoElement){
+        var wrappingElement=document.getElementById("adinplay-wrapper");
+        var videoElement;
+        if(!wrappingElement){
+            wrappingElement=document.createElement("div");
+            wrappingElement.id="adinplay-wrapper";
+            var wrappingStyle=wrappingElement.style;
+            wrappingStyle.setProperty("position","absolute");
+            wrappingStyle.setProperty("z-index","999");
+            wrappingStyle.setProperty("left","0");
+            wrappingStyle.setProperty("right","0");
+            wrappingStyle.setProperty("top","0");
+            wrappingStyle.setProperty("bottom","0");
+            wrappingStyle.setProperty("background-color","rgba(0,0,0,0.2)");
+            wrappingStyle.setProperty("display","none");
+            wrappingStyle.setProperty("justify-content","center");
+            wrappingStyle.setProperty("align-items","center");
             videoElement=document.createElement("div");
+            videoElement.id="adinplay-preroll";
             var videoStyle=videoElement.style;
-            videoStyle.setProperty("position","absolute");
-            videoStyle.setProperty("z-index","999");
-            videoStyle.setProperty("left","0");
-            videoStyle.setProperty("right","0");
-            videoStyle.setProperty("top","0");
-            videoStyle.setProperty("bottom","0");
-            videoStyle.setProperty("display","none");
-            document.body.appendChild(videoElement);
+            videoStyle.setProperty("flex","0 0 auto");
+            videoStyle.setProperty("width","960px");
+            videoStyle.setProperty("height","540px");
+            wrappingElement.appendChild(videoElement);
+            document.body.appendChild(wrappingElement);
+        }
+        else{
+            videoElement=document.getElementById("adinplay-preroll");
         }
         var adplayer = new aipPlayer({
             AD_WIDTH: 960,
@@ -47,9 +62,9 @@ function initAipPreroll() {
                 callback();
             };
             remove_callback=function(){
-                document.getElementById("adinplay-preroll").style.setProperty("display","none");
+                wrappingElement.style.setProperty("display","none");
             };
-            videoElement.style.setProperty("display","block");
+            wrappingElement.style.setProperty("display","flex");
             adplayer.startPreRoll();
         };
         
