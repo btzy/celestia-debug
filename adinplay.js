@@ -24,6 +24,7 @@ function initAipPreroll() {
             wrappingStyle.setProperty("pointer-events","none");
             wrappingStyle.setProperty("justify-content","center");
             wrappingStyle.setProperty("align-items","center");
+            wrappingStyle.setProperty("transition","background-color 0.5s");
             videoElement=document.createElement("div");
             videoElement.id="adinplay-preroll";
             var videoStyle=videoElement.style;
@@ -60,14 +61,14 @@ function initAipPreroll() {
         AdInPlay.showVideoAd=function(callback){
             complete_callback=function(){
                 wrappingElement.style.setProperty("pointer-events","none");
-                wrappingElement.style.setProperty("background-color","transparent");
+                wrappingElement.style.setProperty("background-color","rgba(0,0,0,0)");
                 callback();
             };
             remove_callback=function(){
                 wrappingElement.style.setProperty("display","none");
             };
             wrappingElement.style.setProperty("display","flex");
-            wrappingElement.style.setProperty("background-color","rgba(0,0,0,0.2)");
+            wrappingElement.style.setProperty("background-color","rgba(0,0,0,0.5)");
             wrappingElement.style.setProperty("pointer-events","auto");
             adplayer.startPreRoll();
         };
