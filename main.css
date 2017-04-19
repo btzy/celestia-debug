@@ -288,13 +288,15 @@ body{
     font-size:20px;
     color:rgb(200,200,200);
     text-transform:uppercase;
-    text-decoration:underline overline;
+    border-top:2px solid rgb(200,200,200);
+    border-bottom:2px solid rgb(200,200,200);
 }
 
 #ia-please-bottom{
     flex:0 0 auto;
     font-size:24px;
     color:yellow;
+    padding:0 12px;
 }
 
 #canvas-clipper{
