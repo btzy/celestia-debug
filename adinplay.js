@@ -94,4 +94,6 @@ function getScript (src, callback) {
     headElm.appendChild(script);
 }
 
-getScript('http://api.adinplay.com/player/v2/CLS/celestia.io/player.min.js', initAipPreroll);
+document.addEventListener("load",function(){
+    getScript('http://api.adinplay.com/player/v2/CLS/celestia.io/player.min.js', initAipPreroll);
+});

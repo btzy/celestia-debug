@@ -832,8 +832,16 @@ window.addEventListener("load",function(){
         });
     }
     else{
-        document.getElementById("flex-item-ad").classList.add("displaynone");
+        document.getElementById("flex-item-ia").classList.add("displaynone");
     }
+    
+    // detect ad-blocker
+    var adblock_detect=document.getElementById("adblock-detect");
+    if(!adblock_detect||adblock_detect.offsetHeight===0){
+        document.getElementById("ia-please").style.setProperty("display","flex");
+    }
+    if(adblock_detect)adblock_detect.parentNode.removeChild(adblock_detect);
+    adblock_detect=undefined;
     
     
     // hasGlobalCompositeOperationDifference
