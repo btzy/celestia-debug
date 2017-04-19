@@ -134,8 +134,8 @@ window.addEventListener("load",function(){
     var LOCALSTORAGE_SESSION_GAME_START_COUNT="session-game-start-count";
     var last_game_attempt_start_time=0,session_game_count=0;
     if(window.localStorage){
-        last_game_attempt_start_time=window.localStorage.getItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME)||0;
-        session_game_count=window.localStorage.getItem(LOCALSTORAGE_SESSION_GAME_START_COUNT)||0;
+        last_game_attempt_start_time=parseInt(window.localStorage.getItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME))||0;
+        session_game_count=parseInt(window.localStorage.getItem(LOCALSTORAGE_SESSION_GAME_START_COUNT))||0;
     }
     if(last_game_attempt_start_time+60000<Date.now()){
         last_game_attempt_start_time=0;
@@ -156,12 +156,12 @@ window.addEventListener("load",function(){
                 var do_start=function(){
                     last_game_attempt_start_time=Date.now();
                     if(window.localStorage){
-                        window.localStorage.setItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME,last_game_attempt_start_time);
+                        window.localStorage.setItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME,last_game_attempt_start_time.toString());
                     }
                     var _really_start_game=function(){
                         ++session_game_count;
                         if(window.localStorage){
-                            window.localStorage.setItem(LOCALSTORAGE_SESSION_GAME_START_COUNT,session_game_count);
+                            window.localStorage.setItem(LOCALSTORAGE_SESSION_GAME_START_COUNT,session_game_count.toString());
                         }
                         ga("send","event","game","start",undefined,session_game_count);
 
