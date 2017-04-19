@@ -158,6 +158,9 @@ window.addEventListener("load",function(){
                     if(window.localStorage){
                         window.localStorage.setItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME,last_game_attempt_start_time.toString());
                     }
+                    
+                    hide_welcome_panel();
+                    
                     var _really_start_game=function(){
                         ++session_game_count;
                         if(window.localStorage){
@@ -168,7 +171,6 @@ window.addEventListener("load",function(){
                         var options={touch:document.getElementsByClassName("visible")[0].classList.contains("touch"),opposite:document.getElementsByClassName("visible")[0].classList.contains("opposite"),hasGlobalCompositeOperationDifference:hasGlobalCompositeOperationDifference};
                         dom_game=new DomGame(canvas,options,death_callback);
                         dom_game.start(chosen_endpoint,name_textbox.value);
-                        hide_welcome_panel();
                     }
                     
                     // adinplay video ad
