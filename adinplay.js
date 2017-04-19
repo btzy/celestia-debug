@@ -8,11 +8,24 @@ function initAipPreroll() {
     if(typeof aipPlayer !== "undefined") {
         var complete_callback=undefined;
         var remove_callback=undefined;
+        var videoElement=document.getElementById("adinplay-preroll");
+        if(!videoElement){
+            videoElement=document.createElement("div");
+            var videoStyle=videoElement.style;
+            videoStyle.setProperty("position","absolute");
+            videoStyle.setProperty("z-index","999");
+            videoStyle.setProperty("left","0");
+            videoStyle.setProperty("right","0");
+            videoStyle.setProperty("top","0");
+            videoStyle.setProperty("bottom","0");
+            videoStyle.setProperty("display","none");
+            document.body.appendChild(videoElement);
+        }
         var adplayer = new aipPlayer({
             AD_WIDTH: 960,
             AD_HEIGHT: 540,
             AD_FULLSCREEN: false,
-            PREROLL_ELEM: document.getElementById("adinplay-preroll"),
+            PREROLL_ELEM: videoElement,
             AIP_COMPLETE: function ()  {
                 /*******************
                  ***** WARNING *****
@@ -30,26 +43,12 @@ function initAipPreroll() {
             }
         });
         AdInPlay.showVideoAd=function(callback){
-            var videoElement=document.getElementById("adinplay-preroll");
-            if(!videoElement){
-                videoElement=document.createElement("div");
-                var videoStyle=videoElement.style;
-                videoStyle.setProperty("position","absolute");
-                videoStyle.setProperty("z-index","999");
-                videoStyle.setProperty("left","0");
-                videoStyle.setProperty("right","0");
-                videoStyle.setProperty("top","0");
-                videoStyle.setProperty("bottom","0");
-                document.body.appendChild(videoElement);
-            }
-            
             complete_callback=function(){
                 callback();
             };
             remove_callback=function(){
                 document.getElementById("adinplay-preroll").style.setProperty("display","none");
             };
-            
             videoElement.style.setProperty("display","block");
             adplayer.startPreRoll();
         };
