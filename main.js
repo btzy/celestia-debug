@@ -58,7 +58,7 @@ window.addEventListener("load",function(){
         welcome_panel_suspendanimation=function(){
             animsuspended=true;
         };
-        ad_wrapper.classList.add("displaynone");
+        hide_welcome_panel_ads();
         welcome_panel.classList.add("hidden");
         window.setTimeout(function(){
             if(!animsuspended){
@@ -66,6 +66,10 @@ window.addEventListener("load",function(){
                 welcome_panel_suspendanimation=undefined;
             }
         },1000);
+    };
+    
+    var hide_welcome_panel_ads=function(){
+        ad_wrapper.classList.add("displaynone");
     };
     
     
@@ -159,8 +163,6 @@ window.addEventListener("load",function(){
                         window.localStorage.setItem(LOCALSTORAGE_LAST_GAME_ATTEMPT_START_TIME,last_game_attempt_start_time.toString());
                     }
                     
-                    hide_welcome_panel();
-                    
                     var _really_start_game=function(){
                         ++session_game_count;
                         if(window.localStorage){
@@ -171,10 +173,12 @@ window.addEventListener("load",function(){
                         var options={touch:document.getElementsByClassName("visible")[0].classList.contains("touch"),opposite:document.getElementsByClassName("visible")[0].classList.contains("opposite"),hasGlobalCompositeOperationDifference:hasGlobalCompositeOperationDifference};
                         dom_game=new DomGame(canvas,options,death_callback);
                         dom_game.start(chosen_endpoint,name_textbox.value);
+                        hide_welcome_panel();
                     }
                     
                     // adinplay video ad
                     if(session_game_count%5===1){
+                        hide_welcome_panel_ads();
                         AdInPlay.showVideoAd(_really_start_game);
                     }
                     else{
