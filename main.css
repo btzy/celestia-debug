@@ -171,11 +171,15 @@ body{
     text-decoration:underline;
 }
 #flex-item-sharedrawing{
-    flex:0 0 auto;
+    position:absolute;
+    left:-280px;
+    bottom:0px;
+    width:280px;
+    height:70px;
 }
 #flex-item-sharedrawing img{
     width:280px;
-    height:100px;
+    height:70px;
 }
 #flex-item-sharer{
     flex:0 0 auto;
@@ -183,6 +187,7 @@ body{
     color:black;
     height:24px;
     line-height:10px;
+    position:relative;
 }
 #flex-item-sharer a{
     text-decoration:none;

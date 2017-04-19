@@ -22,9 +22,10 @@ function initAipPreroll() {
             wrappingStyle.setProperty("bottom","0");
             wrappingStyle.setProperty("display","none");
             wrappingStyle.setProperty("pointer-events","none");
+            wrappingStyle.setProperty("background-color","rgba(0,0,0,0)");
             wrappingStyle.setProperty("justify-content","center");
             wrappingStyle.setProperty("align-items","center");
-            wrappingStyle.setProperty("transition","background-color 0.5s");
+            wrappingStyle.setProperty("transition","background-color 1s");
             videoElement=document.createElement("div");
             videoElement.id="adinplay-preroll";
             var videoStyle=videoElement.style;
