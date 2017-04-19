@@ -68,9 +68,14 @@ function initAipPreroll() {
                 wrappingElement.style.setProperty("display","none");
             };
             wrappingElement.style.setProperty("display","flex");
-            wrappingElement.style.setProperty("background-color","rgba(0,0,0,0.5)");
-            wrappingElement.style.setProperty("pointer-events","auto");
-            adplayer.startPreRoll();
+            window.setTimeout(function(){
+                if(wrappingElement.style.getProperty("display")==="flex"){
+                    wrappingElement.style.setProperty("background-color","rgba(0,0,0,0.5)");
+                    wrappingElement.style.setProperty("pointer-events","auto");
+                    adplayer.startPreRoll();
+                }
+            },16);
+            
         };
         
     } else {
