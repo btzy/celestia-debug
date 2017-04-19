@@ -278,7 +278,9 @@ body{
     justify-content:space-around;
     align-items:center;
     flex-wrap:nowrap;
-    background-image:repeating-linear-gradient(45deg, rgb(31,31,31) 0%, rgb(31,31,31) 50%, rgb(62,62,62) 50%, rgb(62,62,62) 100%);
+    background-image:repeating-linear-gradient(45deg, rgb(31,31,31) 0px, rgb(31,31,31) 6px, rgb(62,62,62) 6px, rgb(62,62,62) 12px);
+    text-align:center;
+    font-family:"CandelaBold",sans-serif;
 }
 
 #ia-please-top{
