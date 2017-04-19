@@ -69,10 +69,13 @@ function initAipPreroll() {
             };
             wrappingElement.style.setProperty("display","flex");
             window.setTimeout(function(){
-                if(wrappingElement.style.getProperty("display")==="flex"){
+                if(wrappingElement.style.getPropertyValue("display")==="flex"){
                     wrappingElement.style.setProperty("background-color","rgba(0,0,0,0.5)");
                     wrappingElement.style.setProperty("pointer-events","auto");
                     adplayer.startPreRoll();
+                }
+                else{
+                    callback();
                 }
             },16);
             
