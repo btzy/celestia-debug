@@ -34,14 +34,15 @@ body{
     padding:0;
     border:0;
     position:absolute;
-    overflow-x:hidden;
-    overflow-y:auto;
+    overflow:hidden;
 }
 #welcome-panel{
     z-index:2;
     background-color:black;
     opacity:1;
     transition:opacity 1s;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 #welcome-panel.hidden{
     opacity:0;
@@ -89,6 +90,7 @@ body{
     text-align:center;
     position:relative;
     z-index:-1;
+    overflow:hidden;
 }
 #flex-item-name{
     flex:0 0 auto;
