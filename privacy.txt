@@ -20,11 +20,11 @@ We will protect your username and password by using reasonable security safeguar
 
 Advertising
 
-Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies and other site data. This privacy policy does not cover the use of cookies by any advertisers.
+Ads appearing on our site may be delivered to Users by advertising partners, who may set cookies and other site data.  This privacy policy does not cover the use of cookies by any advertisers.
 
 Google Adsense
 
-Our Site may use Google Adsense.  Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.  Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.  Users may opt out of personalized advertising by visiting https://www.google.com/settings/ads.
+Our Site may use Google Adsense.  Third party vendors, including Google, use cookies to serve ads based on a user's prior visits to your website or other websites.  Google's use of advertising cookies enables it and its partners to serve ads to your users based on their visit to your sites and/or other sites on the Internet.   Google may also collect device-specific information, location information, and other information on your device for use with Google's services.  Users may opt out of personalized advertising by visiting https://www.google.com/settings/ads.
 
 Google Analytics
 

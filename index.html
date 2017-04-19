@@ -12,7 +12,7 @@
     <link rel="manifest" href="/manifest.json">
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b3b300">
     <meta name="theme-color" content="#ffffff">
-    <script async='async' src='https://www.googletagservices.com/tag/js/gpt.js'></script>
+    <script async="async" src="https://www.googletagservices.com/tag/js/gpt.js"></script>
     <script>
         var googletag = googletag || {};
         googletag.cmd = googletag.cmd || [];
@@ -24,8 +24,9 @@
             googletag.enableServices();
         });
     </script>
-    <script type="text/javascript" src="celestia.min.js"></script>
-    <!--<script type="text/javascript" src="FontLoader.js"></script>
+    <!--<script type="text/javascript" src="celestia.min.js"></script>-->
+    <script type="text/javascript" src="adinplay.js"></script>
+    <script type="text/javascript" src="FontLoader.js"></script>
     <script type="text/javascript" src="key-polyfill.js"></script>
     <script type="text/javascript" src="encoding-polyfill.js"></script>
     <script type="text/javascript" src="findindex-polyfill.js"></script>
@@ -40,7 +41,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="facebook.js"></script>
     <script type="text/javascript" src="twitter.js"></script>
-    <script type="text/javascript" src="vkontakte.js"></script>-->
+    <script type="text/javascript" src="vkontakte.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -93,7 +94,10 @@
     <div class="full-screen-panel" id="welcome-panel">
         <div id="new-changes-panel"><div id="new-changes-button">Newest changes &raquo;</div>
             <div id="new-changes-details" class="displaynone">
-                <ul><li>Some improved animations</li></ul>
+                <ul>
+                    <li>Fixed a bug where no existing food were displayed when starting the game.</li>
+                    <li>Some improved animations.</li>
+                </ul>
                 <div class="older-changes">Older changes</div>
                 <ul class="older-changes-details">
                     <li>Global leaderboard with daily, weekly and monthly highscores.</li>
