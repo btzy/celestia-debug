@@ -434,6 +434,7 @@ body{
     font-style:inherit;
     color:transparent;
     cursor:pointer;
+    text-overflow:ellipsis;
 }
 
 #name-second-row>#center-space select>option{
@@ -449,6 +450,7 @@ body{
     text-align:center;
     text-align-last:center;
     padding:4px 0;
+    text-overflow:inherit;
 }
 
 #name-second-row>#center-space .server-select-cover{
@@ -463,6 +465,7 @@ body{
     color:rgb(192,192,192);
     pointer-events:none;
     line-height:44px;
+    text-overflow:ellipsis;
 }
 #name-second-row>#center-space:hover .server-select-cover{
     background-color:rgb(93,93,93);
