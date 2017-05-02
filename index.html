@@ -161,12 +161,28 @@
                         <div class="name-second-row-item" id="center-space">
                             <div class="center-space-object" id="server-select-div">
                                 <select>
-                                    <option value="test" selected>Best Server</option>
+                                    <option value="test" selected>Auto Select</option>
                                 </select>
-                                <div class="server-select-cover"></div>
-                            </div>
-                            <div class="center-space-object displaynone" id="server-hash-div">
-                                Hash here
+                                <div class="server-select-cover">
+                                    <div class="server-select-cover-button">
+                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-22 -22 44 44" preserveAspectRatio="xMidYMid meet" class="server-select-cover-button-svg">
+                                            <defs>
+                                                <mask id="middleMask" maskUnits="userSpaceOnUse" x="-22" y="-22" width="44" height="44">
+                                                    <rect x="-22" y="-22" width="44" height="44" style="fill:white;" />
+                                                    <line x1="-5" y1="5" x2="5" y2="-5" style="stroke:black;stroke-width:4px;" />
+                                                </mask>
+                                            </defs>
+                                            <path d="M 6 -12 A 4.24264 4.24264 0 0 1 12 -6 L 8 -2 A 4.24264 4.24264 0 0 1 2 -8 Z" mask="url(#middleMask)" style="stroke:white;stroke-width:2px;fill:none;" />
+                                            <path d="M -6 12 A 4.24264 4.24264 0 0 1 -12 6 L -8 2 A 4.24264 4.24264 0 0 1 -2 8 Z" mask="url(#middleMask)" style="stroke:white;stroke-width:2px;fill:none;" />
+                                            <line x1="-5" y1="5" x2="5" y2="-5" style="stroke:white;stroke-width:2px;stroke-linecap:round;" />
+                                        </svg>
+                                        <div class="server-select-cover-directlink"></div>
+                                    </div>
+                                    <div class="server-select-cover-wrap">
+                                        <div class="server-select-cover-text"></div>
+                                        <div class="server-select-cover-space"></div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="name-second-row-item name-second-row-button" id="join-button"><canvas id="join-button-canvas">Join</canvas></div>
