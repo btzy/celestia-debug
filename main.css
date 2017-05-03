@@ -530,7 +530,17 @@ body{
     white-space:nowrap;
     text-align:left;
     cursor:text;
-    user-select:all;
+    -webkit-user-select:text;
+    -khtml-user-select:text;
+    -moz-user-select:text;
+    -ms-user-select:text;
+    user-select:text;
+}
+#name-second-row>#center-space .server-select-cover .server-select-cover-button .server-select-cover-directlink::-moz-selection{
+    background:rgba(255,255,0,0.3);
+}
+#name-second-row>#center-space .server-select-cover .server-select-cover-button .server-select-cover-directlink::selection{
+    background:rgba(255,255,0,0.3);
 }
 @media (max-width: 450px){
     #name-second-row>#center-space .server-select-cover .server-select-cover-button .server-select-cover-directlink{
@@ -671,6 +681,10 @@ body{
     z-index:3;
     transition:opacity 0.7s;
     overflow:hidden;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
     user-select:none;
     cursor:default;
 }
