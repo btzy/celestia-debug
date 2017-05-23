@@ -24,8 +24,8 @@
             googletag.enableServices();
         });
     </script>
-    <script type="text/javascript" src="celestia.min.js"></script>
-    <!--<script type="text/javascript" src="adinplay.js"></script>
+    <!--<script type="text/javascript" src="celestia.min.js"></script>-->
+    <script type="text/javascript" src="adinplay.js"></script>
     <script type="text/javascript" src="FontLoader.js"></script>
     <script type="text/javascript" src="key-polyfill.js"></script>
     <script type="text/javascript" src="encoding-polyfill.js"></script>
@@ -41,7 +41,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="facebook.js"></script>
     <script type="text/javascript" src="twitter.js"></script>
-    <script type="text/javascript" src="vkontakte.js"></script>-->
+    <script type="text/javascript" src="vkontakte.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -127,10 +127,11 @@
         <div id="new-changes-panel"><div id="new-changes-button">Newest changes &raquo;</div>
             <div id="new-changes-details" class="displaynone">
                 <ul>
-                    <li>Your blob color can now be customized.</li>
+                    <li>New Europe server and server selection interface.</li>
                 </ul>
                 <div class="older-changes">Older changes</div>
                 <ul class="older-changes-details">
+                    <li>Your blob color can now be customized.</li>
                     <li>Fixed a bug where no existing food were displayed when starting the game.</li>
                     <li>Some improved animations.</li>
                     <li>Global leaderboard with daily, weekly and monthly highscores.</li>
@@ -140,9 +141,7 @@
                 <div class="older-changes-details">For more information, please view the <a href="changelog.html">changelog</a>.</div>
             </div>
         </div>
-        <div id="skin-button">
-            <canvas id="skin-canvas" title="Change skin">Change skin</canvas>
-        </div>
+        
         <div id="welcome-flex">
             <div id="flex-item-links">
                 <a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a href="changelog.html">Changelog</a> | <a href="http://iogames.space/">More .io games</a><span id="alternate-skin-button"> | <span class="link" id="alternate-skin-link">Change skin</span></span>
@@ -230,6 +229,15 @@
             </div>
             <div id="flex-item-legal">
                 <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy</a>
+            </div>
+            <div id="flex-item-right-bottom">
+                <div id="skin-button">
+                    <canvas id="skin-canvas" title="Change skin">Change skin</canvas>
+                </div>
+                <div id="gamezoo-button">
+                    <div id="gamezoo-also-try">Also try</div>
+                    <iframe frameborder="0" width="250" height="125" src="http://gamezoo.io/panel/get_banner/137"></iframe>
+                </div>
             </div>
         </div>
     </div>

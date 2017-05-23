@@ -60,6 +60,8 @@ body{
     padding:0;
     border:0;
 }
+#new-changes-panel{
+}
 #welcome-flex{
     display:flex;
     flex-direction:column;
@@ -647,10 +649,15 @@ body{
     text-decoration:underline;
 }
 
+#flex-item-right-bottom{
+    flex:0 0 0px;
+    position:relative;
+    width:100%;
+}
 
 #skin-button{
     position:absolute;
-    bottom:0;
+    bottom:125px;
     right:0;
     padding:12px;
 }
@@ -674,6 +681,53 @@ body{
     }
     #alternate-skin-button{
         display:inline;
+    }
+}
+
+#gamezoo-button{
+    position:absolute;
+    bottom:0;
+    right:0;
+    padding:0;
+    width:250px;
+}
+
+#gamezoo-also-try{
+    color:lightyellow;
+    font-family:"CandelaBook",sans-serif;
+    font-size:14px;
+    text-align:center;
+    line-height:20px;
+}
+
+#gamezoo-button>iframe{
+    width:250px;
+    height:125px;
+    display:block;
+}
+
+@media (min-width: 1410px){
+    #gamezoo-button{
+        right:auto;
+        left:0;
+    }
+    #skin-button{
+        bottom:0;
+    }
+}
+
+@media (min-width: 1500px){
+    #gamezoo-button{
+        padding:0 12px 12px;
+    }
+}
+
+@media (max-width: 1000px){
+    #gamezoo-button{
+        display:none;
+    }
+    #skin-button{
+        bottom:0;
     }
 }
 
@@ -732,7 +786,7 @@ body{
 }
 
 #skin-chooser-flex>#skin-chooser-picker{
-    flex:1 1 0;
+    flex:1 1 0px;
     min-height:0;
 }
 
@@ -745,7 +799,7 @@ body{
 }
 
 .hsl-color-picker>.hue-sat{
-    flex:1 1 0;
+    flex:1 1 0px;
     min-width:0;
     min-height:0;
     position:relative;
@@ -877,7 +931,7 @@ body{
 }
 
 #skin-chooser-bottom>.backwrapper{
-    flex:1 1 0;
+    flex:1 1 0px;
     text-align:right;
     box-sizing:border-box;
     padding-right:12px;
@@ -893,7 +947,7 @@ body{
 }
 
 #skin-chooser-bottom>.defaultwrapper{
-    flex:1 1 0;
+    flex:1 1 0px;
     text-align:left;
     box-sizing:border-box;
     padding-left:12px;
