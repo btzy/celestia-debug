@@ -722,7 +722,16 @@ body{
     }
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1000px) and (max-height: 500px){
+    #gamezoo-button{
+        display:none;
+    }
+    #skin-button{
+        bottom:0;
+    }
+}
+
+@media (max-width: 820px){
     #gamezoo-button{
         display:none;
     }
