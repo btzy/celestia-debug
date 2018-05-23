@@ -24,8 +24,9 @@
             googletag.enableServices();
         });
     </script>
-    <script type="text/javascript" src="celestia.min.js"></script>
-    <!--<script type="text/javascript" src="adinplay.js"></script>
+    <!--<script type="text/javascript" src="celestia.min.js"></script>-->
+    <script type="text/javascript" src="cookiesettings.js"></script>
+    <script type="text/javascript" src="adinplay.js"></script>
     <script type="text/javascript" src="FontLoader.js"></script>
     <script type="text/javascript" src="key-polyfill.js"></script>
     <script type="text/javascript" src="encoding-polyfill.js"></script>
@@ -41,7 +42,7 @@
     <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="facebook.js"></script>
     <script type="text/javascript" src="twitter.js"></script>
-    <script type="text/javascript" src="vkontakte.js"></script>-->
+    <script type="text/javascript" src="vkontakte.js"></script>
 </head>
 <body>
     <div id="fb-root"></div>
@@ -127,16 +128,16 @@
         <div id="new-changes-panel"><div id="new-changes-button">Newest changes &raquo;</div>
             <div id="new-changes-details" class="displaynone">
                 <ul>
-                    <li>New Europe server and server selection interface.</li>
+                    <li>Exact health and mass is displayed at the bottom-left of the screen when playing.</li>
                 </ul>
                 <div class="older-changes">Older changes</div>
                 <ul class="older-changes-details">
+                    <li>New Europe server and server selection interface.</li>
                     <li>Your blob color can now be customized.</li>
                     <li>Fixed a bug where no existing food were displayed when starting the game.</li>
                     <li>Some improved animations.</li>
                     <li>Global leaderboard with daily, weekly and monthly highscores.</li>
                     <li>Personal leaderboard (saved locally).</li>
-                    <li>Bots have now realised that they can boost.</li>
                 </ul>
                 <div class="older-changes-details">For more information, please view the <a href="changelog.html">changelog</a>.</div>
             </div>
@@ -228,15 +229,25 @@
                 </span>
             </div>
             <div id="flex-item-legal">
-                <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy</a>
+                <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy | <a id="cookie-settings-button">Cookie Settings</a>
             </div>
             <div id="flex-item-right-bottom">
                 <div id="skin-button">
                     <canvas id="skin-canvas" title="Change skin">Change skin</canvas>
                 </div>
-                <div id="gamezoo-button">
+                <!--<div id="gamezoo-button">
                     <div id="gamezoo-also-try" class="displaynone">Also try</div>
                     <iframe id="gamezoo-iframe" frameborder="0" width="250" height="125"></iframe>
+                </div>-->
+                <div id="cookie-settings" class="displaynone">
+                    <div>We use cookies and local storage save your preferences and statistics, analyse site traffic, and serve targeted ads.  By using our site, you consent to our use of cookies.</div>  <div>Use cookies and local storage for:</div>
+                    <div class="cookie-settings-flex">
+                        <span class="option"><input type="checkbox" id="cookie-necessary-checkbox" checked disabled /><label for="cookie-necessary-checkbox">Necessary functions</label></span>
+                        <span class="option"><input type="checkbox" id="cookie-functionality-checkbox" checked /><label for="cookie-functionality-checkbox">Personalization and functionality</label></span>
+                        <span class="option"><input type="checkbox" id="cookie-analytics-checkbox" checked /><label for="cookie-analytics-checkbox">Site performance and analytics</label></span>
+                        <span class="option"><input type="checkbox" id="cookie-advertising-checkbox" checked /><label for="cookie-advertising-checkbox">Targeting</label></span>
+                        <span><input type="button" value="OK" id="cookie-okay-button" /></span>
+                    </div>
                 </div>
             </div>
         </div>
