@@ -25,7 +25,6 @@
         });
     </script>
     <!--<script type="text/javascript" src="celestia.min.js"></script>-->
-    <script type="text/javascript" src="cookiesettings.js"></script>
     <script type="text/javascript" src="adinplay.js"></script>
     <script type="text/javascript" src="FontLoader.js"></script>
     <script type="text/javascript" src="key-polyfill.js"></script>
@@ -93,59 +92,27 @@
             </div>
         </div>
     </div>
-    <div class="full-screen-panel displaynone transparent" id="skin-chooser-panel">
-        <div class="inner-wrapper" id="skin-chooser-panel-inner-wrapper">
-            <div id="skin-chooser-flex">
-                <div id="skin-chooser-picker" class="hsl-color-picker">
-                    <div class="hue-sat">
-                        <canvas></canvas>
-                        <div class="selector">
-                            <div class="left"></div>
-                            <div class="right"></div>
-                            <div class="top"></div>
-                            <div class="bottom"></div>
-                        </div>
-                    </div>
-                    <div class="spacer"></div>
-                    <div class="lum">
-                        <canvas></canvas>
-                        <div class="selector">
-                            <div class="leftarr"></div>
-                            <div class="rightarr"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="spacer"></div>
-                <div id="skin-chooser-bottom">
-                    <div class="backwrapper"><span class="back">&laquo; Back</span></div>
-                    <div class="sample"><canvas></canvas></div>
-                    <div class="defaultwrapper"><span class="default">Default</span></div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="full-screen-panel" id="welcome-panel">
         <div id="new-changes-panel"><div id="new-changes-button">Newest changes &raquo;</div>
             <div id="new-changes-details" class="displaynone">
                 <ul>
-                    <li>Exact health and mass is displayed at the bottom-left of the screen when playing.</li>
+                    <li>Fixed a bug where no existing food were displayed when starting the game.</li>
+                    <li>Some improved animations.</li>
                 </ul>
                 <div class="older-changes">Older changes</div>
                 <ul class="older-changes-details">
-                    <li>New Europe server and server selection interface.</li>
-                    <li>Your blob color can now be customized.</li>
-                    <li>Fixed a bug where no existing food were displayed when starting the game.</li>
-                    <li>Some improved animations.</li>
                     <li>Global leaderboard with daily, weekly and monthly highscores.</li>
                     <li>Personal leaderboard (saved locally).</li>
+                    <li>Bots have now realised that they can boost.</li>
+                    <li>Cranked up the movement speed.</li>
+                    <li>Reduced boost speed multiplier slightly.</li>
                 </ul>
                 <div class="older-changes-details">For more information, please view the <a href="changelog.html">changelog</a>.</div>
             </div>
         </div>
-        
         <div id="welcome-flex">
             <div id="flex-item-links">
-                <a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a href="changelog.html">Changelog</a> | <a href="http://iogames.space/">More .io games</a><span id="alternate-skin-button"> | <span class="link" id="alternate-skin-link">Change skin</span></span>
+                <a href="about.html">About</a> | <a href="blog.html">Blog</a> | <a href="changelog.html">Changelog</a> | <a href="http://iogames.space/">More .io games</a>
             </div>
             <div class="flex-item-expand2"></div>
             <div id="flex-item-title">
@@ -158,33 +125,7 @@
                     <input type="text" id="name-textbox" placeholder="Enter your name" />
                     <div id="name-second-row">
                         <div class="name-second-row-item name-second-row-button" id="leaderboard-button"><canvas id="leaderboard-button-canvas">Leaderboard</canvas></div>
-                        <div class="name-second-row-item" id="center-space">
-                            <div class="center-space-object" id="server-select-div">
-                                <select>
-                                    <option value="test" selected>Auto Select</option>
-                                </select>
-                                <div class="server-select-cover">
-                                    <div class="server-select-cover-button">
-                                        <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="-22 -22 44 44" preserveAspectRatio="xMidYMid meet" class="server-select-cover-button-svg">
-                                            <defs>
-                                                <mask id="middleMask" maskUnits="userSpaceOnUse" x="-22" y="-22" width="44" height="44">
-                                                    <rect x="-22" y="-22" width="44" height="44" style="fill:white;" />
-                                                    <line x1="-5" y1="5" x2="5" y2="-5" style="stroke:black;stroke-width:4px;" />
-                                                </mask>
-                                            </defs>
-                                            <path d="M 6 -12 A 4.24264 4.24264 0 0 1 12 -6 L 8 -2 A 4.24264 4.24264 0 0 1 2 -8 Z" mask="url(#middleMask)" style="stroke:white;stroke-width:2px;fill:none;" />
-                                            <path d="M -6 12 A 4.24264 4.24264 0 0 1 -12 6 L -8 2 A 4.24264 4.24264 0 0 1 -2 8 Z" mask="url(#middleMask)" style="stroke:white;stroke-width:2px;fill:none;" />
-                                            <line x1="-5" y1="5" x2="5" y2="-5" style="stroke:white;stroke-width:2px;stroke-linecap:round;" />
-                                        </svg>
-                                        <div class="server-select-cover-directlink"></div>
-                                    </div>
-                                    <div class="server-select-cover-wrap">
-                                        <div class="server-select-cover-text"></div>
-                                        <div class="server-select-cover-space"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="name-second-row-item" id="center-space"></div>
                         <div class="name-second-row-item name-second-row-button" id="join-button"><canvas id="join-button-canvas">Join</canvas></div>
                     </div>
                 </div>
@@ -229,26 +170,7 @@
                 </span>
             </div>
             <div id="flex-item-legal">
-                <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy | <a id="cookie-settings-button">Cookie Settings</a>
-            </div>
-            <div id="flex-item-right-bottom">
-                <div id="skin-button">
-                    <canvas id="skin-canvas" title="Change skin">Change skin</canvas>
-                </div>
-                <!--<div id="gamezoo-button">
-                    <div id="gamezoo-also-try" class="displaynone">Also try</div>
-                    <iframe id="gamezoo-iframe" frameborder="0" width="250" height="125"></iframe>
-                </div>-->
-                <div id="cookie-settings" class="displaynone">
-                    <div>We use cookies and local storage save your preferences and statistics, analyse site traffic, and serve targeted ads.  By using our site, you consent to our use of cookies.</div>  <div>Use cookies and local storage for:</div>
-                    <div class="cookie-settings-flex">
-                        <span class="option"><input type="checkbox" id="cookie-necessary-checkbox" checked disabled /><label for="cookie-necessary-checkbox">Necessary functions</label></span>
-                        <span class="option"><input type="checkbox" id="cookie-functionality-checkbox" checked /><label for="cookie-functionality-checkbox">Personalization and functionality</label></span>
-                        <span class="option"><input type="checkbox" id="cookie-analytics-checkbox" checked /><label for="cookie-analytics-checkbox">Site performance and analytics</label></span>
-                        <span class="option"><input type="checkbox" id="cookie-advertising-checkbox" checked /><label for="cookie-advertising-checkbox">Targeting</label></span>
-                        <span><input type="button" value="OK" id="cookie-okay-button" /></span>
-                    </div>
-                </div>
+                <a href="terms.txt">Terms of Service</a> | <a href="privacy.txt">Privacy</a>
             </div>
         </div>
     </div>
